@@ -25,6 +25,6 @@ public class test1 : MonoBehaviour
         
     }
     public void test(){
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("MenuScene");
     }
 }

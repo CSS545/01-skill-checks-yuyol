@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class test1 : MonoBehaviour
+public class OptionSceneManager : MonoBehaviour
 {
     // Start is called before the first frame update
     // public Text text;

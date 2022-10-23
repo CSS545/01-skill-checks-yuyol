@@ -11,18 +11,29 @@ public class ScoreManager : MonoBehaviour
     public Text scoreText;
     private int highScore = 0;
 
+    // write / read playerPref highScore
     private void Start ()
     {
-        AddScore(0);
+        
+        int countTmp = PlayerPrefs.GetInt("highScore", 0);
+        PlayerPrefs.SetInt("highScore", countTmp+5);
+        scoreText.text = countTmp.ToString();
+        Debug.Log(countTmp);
     }
 
-    public void AddScore(int toAdd) {
-        highScore += toAdd;
-        scoreText.text = highScore.ToString();
-    }
-    public void UpdateScore(int newScore)
-    {
-        highScore = Mathf.Max(highScore, newScore);
+    //public void AddScore(int toAdd) {
+
+        
+    //    highScore += toAdd;
+    //    scoreText.text = highScore.ToString();
+    //}
+
+    public void UpdateScore(int newScore) {
+        if (newScore < highScore)
+        {
+            PlayerPrefs.SetInt("highScore", newScore);
+            highScore = newScore;
+        }
     }
 
     public int GetScore()
@@ -33,6 +44,7 @@ public class ScoreManager : MonoBehaviour
     public void WipeScore()
     {
         highScore= 0;
+        PlayerPrefs.SetInt("highScore", 0);
     }
 
 }

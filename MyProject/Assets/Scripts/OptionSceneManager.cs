@@ -13,6 +13,7 @@ public class OptionSceneManager : MonoBehaviour
         
 
         //open count
+        // store open count locally
         int countTmp = PlayerPrefs.GetInt("openCount",0);
         PlayerPrefs.SetInt("openCount",++countTmp);
         Debug.Log(countTmp);

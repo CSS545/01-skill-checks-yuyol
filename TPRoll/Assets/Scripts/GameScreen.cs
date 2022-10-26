@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameScreen : MonoBehaviour
 {
     public PauseScreen pauseScreen;
+    public DeathScreen deathScreen;
 
     // Update is called once per frame
     void Update()
@@ -20,6 +21,13 @@ public class GameScreen : MonoBehaviour
         //trun default offscreen on
         pauseScreen.gameObject.SetActive(true);
 
+
+    }
+
+    public void OnPlayerDeath()
+    {
+        gameObject.SetActive(false);
+        deathScreen.gameObject.SetActive(true);
 
     }
 

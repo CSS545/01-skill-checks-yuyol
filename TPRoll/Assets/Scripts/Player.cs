@@ -25,4 +25,19 @@ public class Player : MonoBehaviour
             rb.velocity = Vector2.zero;
         }
     }
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(gameObject);
+            //this go through all scene to find scene- bad, but ok for once
+            GameScreen gameScreen = FindObjectOfType<GameScreen>();
+            if (gameScreen != null)
+            {
+                gameScreen.OnPlayerDeath();
+            }
+        }
+    }
 }

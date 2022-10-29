@@ -41,6 +41,11 @@ public class DeathScreen : MonoBehaviour
     }
 
     private void checkAd() {
+        int CurPoo = PlayerPrefs.GetInt("CurrentPoo", 0);
+        int HighScore = PlayerPrefs.GetInt("highScore", 0);
+        if (CurPoo > HighScore) {
+            PlayerPrefs.SetInt("highScore", CurPoo);
+        }
         if (deathCounter > MinGameBeforeAd)
         {
             adScreen.gameObject.SetActive(true);

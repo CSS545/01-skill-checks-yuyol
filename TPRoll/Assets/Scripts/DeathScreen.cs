@@ -7,7 +7,8 @@ public class DeathScreen : MonoBehaviour
 {
     public AdFullScreen adScreen;
     private int deathCounter;
-    public int MinGameBeforeAd;
+    //control the contineous gameplays per fullscreen ad break
+    public int MinGameBeforeAd = 2;
     //awake called before starts
     private void Awake()
     {

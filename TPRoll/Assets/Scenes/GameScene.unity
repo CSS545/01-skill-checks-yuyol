@@ -1227,7 +1227,7 @@ GameObject:
   - component: {fileID: 523183050}
   - component: {fileID: 523183049}
   m_Layer: 0
-  m_Name: Square (1)
+  m_Name: WallDown
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1395,7 +1395,7 @@ GameObject:
   - component: {fileID: 572352842}
   - component: {fileID: 572352841}
   m_Layer: 0
-  m_Name: Square
+  m_Name: WallUp
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2792,7 +2792,7 @@ GameObject:
   - component: {fileID: 1330815240}
   - component: {fileID: 1330815239}
   m_Layer: 0
-  m_Name: Square (3)
+  m_Name: WallLeft
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2960,7 +2960,7 @@ GameObject:
   - component: {fileID: 1513553761}
   - component: {fileID: 1513553760}
   m_Layer: 0
-  m_Name: Square (2)
+  m_Name: WallRight
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

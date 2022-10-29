@@ -747,6 +747,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -820,6 +821,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc1ec69c98bdae446825deb72fcdbcc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1081938329}
 --- !u!1 &621429649
 GameObject:
   m_ObjectHideFlags: 0
@@ -903,6 +917,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1674113077}
     m_Modifications:
+    - target: {fileID: 371060584164015777, guid: 4f805b81280746b41b09567e720a3802, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1674113079}
+    - target: {fileID: 371060584164015777, guid: 4f805b81280746b41b09567e720a3802, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoToMenu
+      objectReference: {fileID: 0}
     - target: {fileID: 371060584164015778, guid: 4f805b81280746b41b09567e720a3802, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1005,6 +1027,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1674113077}
     m_Modifications:
+    - target: {fileID: 251052968699546399, guid: 0bb7756619c71444986647520b3197b3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1674113079}
+    - target: {fileID: 251052968699546399, guid: 0bb7756619c71444986647520b3197b3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartGame
+      objectReference: {fileID: 0}
     - target: {fileID: 251052968699546592, guid: 0bb7756619c71444986647520b3197b3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1197,11 +1227,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5990852050464799671, guid: 3f545c32faf051d408290c379654be24, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0034689903
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5990852050464799671, guid: 3f545c32faf051d408290c379654be24, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.40102154
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5990852050464799671, guid: 3f545c32faf051d408290c379654be24, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1237,6 +1267,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f545c32faf051d408290c379654be24, type: 3}
+--- !u!4 &1081938329 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5990852050464799671, guid: 3f545c32faf051d408290c379654be24, type: 3}
+  m_PrefabInstance: {fileID: 1081938328}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1170384146
 GameObject:
   m_ObjectHideFlags: 0

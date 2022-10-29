@@ -7,6 +7,7 @@ public class MovementJoystick : MonoBehaviour
 {
     public GameObject joystick;
     public GameObject joystickBG;
+    public GameObject joystickBGTutorial;
     public Vector2 joystickVec;
 
     private Vector2 joystickTouchPos;
@@ -23,6 +24,7 @@ public class MovementJoystick : MonoBehaviour
 
     public void PointerDown()
     {
+        Destroy(joystickBGTutorial);
         joystick.transform.position = Input.mousePosition;
         joystickBG.transform.position = Input.mousePosition;
         joystickTouchPos = Input.mousePosition;

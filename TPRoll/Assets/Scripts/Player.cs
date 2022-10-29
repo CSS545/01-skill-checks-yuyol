@@ -49,7 +49,9 @@ public class Player : MonoBehaviour
         {
             
             Destroy(collision.gameObject);
-            //this go through all scene to find scene- bad, but ok for once
+
+            int countTmp = PlayerPrefs.GetInt("AppleEat", 0);
+            PlayerPrefs.SetInt("AppleEat", countTmp++); 
 
             foodLimiter++;
             playerSpeed = playerSpeed + Mathf.Log(playerSpeed, logBase) / foodLimiter;

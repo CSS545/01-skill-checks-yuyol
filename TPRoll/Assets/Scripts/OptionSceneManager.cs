@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class OptionSceneManager : MonoBehaviour
 {
+    public StatsPanel statsPanel;
     // Start is called before the first frame update
     // public Text text;
     void Start()
@@ -25,5 +26,13 @@ public class OptionSceneManager : MonoBehaviour
     }
     public void test(){
         SceneManager.LoadScene("MenuScene");
+    }
+    public void ReloadCurrentScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    public void ShowStats()
+    {
+        statsPanel.gameObject.SetActive(true);
     }
 }

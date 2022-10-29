@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //movement update
         if (movementJoystick.joystickVec.y != 0)
         {
             rb.velocity = new Vector2(movementJoystick.joystickVec.x * playerSpeed, movementJoystick.joystickVec.y * playerSpeed);
@@ -24,10 +25,13 @@ public class Player : MonoBehaviour
         else {
             rb.velocity = Vector2.zero;
         }
+
+        //collision update
+
     }
 
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    //Unity magic activated when collision happen
+    private void OnCollisionEnter2D(Collision2D collision) 
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {

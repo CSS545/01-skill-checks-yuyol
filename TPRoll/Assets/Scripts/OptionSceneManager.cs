@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class OptionSceneManager : MonoBehaviour
 {
     public StatsPanel statsPanel;
+    public ErasePanel erasePanel;
     // Start is called before the first frame update
     // public Text text;
     void Start()
@@ -34,5 +35,9 @@ public class OptionSceneManager : MonoBehaviour
     public void ShowStats()
     {
         statsPanel.gameObject.SetActive(true);
+    }
+    public void EraseSetting()
+    {
+        erasePanel.gameObject.SetActive(true);
     }
 }

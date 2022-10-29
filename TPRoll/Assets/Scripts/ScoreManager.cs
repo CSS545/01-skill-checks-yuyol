@@ -16,7 +16,6 @@ public class ScoreManager : MonoBehaviour
     {
         
         int countTmp = PlayerPrefs.GetInt("highScore", 0);
-        PlayerPrefs.SetInt("highScore", countTmp+5);
         scoreText.text = countTmp.ToString();
         Debug.Log(countTmp);
     }

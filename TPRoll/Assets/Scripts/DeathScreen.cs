@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class DeathScreen : MonoBehaviour
 {
+    public AdFullScreen adScreen;
+    private int deathCounter;
+    public int MinGameBeforeAd;
     //awake called before starts
     private void Awake()
     {
@@ -14,6 +17,7 @@ public class DeathScreen : MonoBehaviour
     private void OnEnable()
     {
         Time.timeScale = 0;
+        deathCounter++;
     }
 
     private void OnDisable()
@@ -25,12 +29,22 @@ public class DeathScreen : MonoBehaviour
     //reload the scene/level
     public void RestartGame()
     {
+        checkAd();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void GoToMenu()
     {
+        checkAd();
         SceneManager.LoadScene("MenuScene");
+    }
+
+    private void checkAd() {
+        if (deathCounter > MinGameBeforeAd)
+        {
+            adScreen.gameObject.SetActive(true);
+            deathCounter = 0;
+        }
     }
 
 

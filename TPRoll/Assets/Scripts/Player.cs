@@ -12,6 +12,8 @@ public class Player : MonoBehaviour
     public GameObject ememyPref;
     private Rigidbody2D rb;
     public int countTmp = 0;
+    public AudioSource deathSFSource;
+    public AudioClip deathClip;
 
     // Start is called before the first frame update
     void Start()
@@ -46,6 +48,7 @@ public class Player : MonoBehaviour
             GameScreen gameScreen = FindObjectOfType<GameScreen>();
             if (gameScreen != null)
             {
+                deathSFSource.PlayOneShot(deathClip, 0.8f);
                 //update food collected this round
                 PlayerPrefs.SetInt("AppleEat", 
                                     countTmp + PlayerPrefs.GetInt("AppleEat", 0));

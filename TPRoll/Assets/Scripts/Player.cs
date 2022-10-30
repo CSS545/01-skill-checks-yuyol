@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     public Spawner spn;
     public GameObject ememyPref;
     private Rigidbody2D rb;
-    private int countTmp;
+    public int countTmp = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -47,8 +47,8 @@ public class Player : MonoBehaviour
             if (gameScreen != null)
             {
                 //update food collected this round
-                PlayerPrefs.GetInt("AppleEat", 0);
-                PlayerPrefs.SetInt("AppleEat", countTmp);
+                PlayerPrefs.SetInt("AppleEat", 
+                                    countTmp + PlayerPrefs.GetInt("AppleEat", 0));
                 gameScreen.OnPlayerDeath();
             }
             

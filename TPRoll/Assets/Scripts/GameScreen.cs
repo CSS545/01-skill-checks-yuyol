@@ -34,10 +34,8 @@ public class GameScreen : MonoBehaviour
 
     public void OnPlayerDeath()
     {
-        countTmp = PlayerPrefs.GetInt("TotalDeath", 0);
-        countTmp++;
-        PlayerPrefs.SetInt("TotalDeath", countTmp);
-        Debug.Log("OnPlayDeathTotalDeath" + countTmp);
+        PlayerPrefs.SetInt("TotalDeath", 1 + PlayerPrefs.GetInt("TotalDeath", 0));
+        Debug.Log("OnPlayDeathTotalDeath" + PlayerPrefs.GetInt("TotalDeath", 0));
         timer.TimerActive(false);
         gameObject.SetActive(false);
         deathScreen.gameObject.SetActive(true);

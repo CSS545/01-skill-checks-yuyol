@@ -15,6 +15,7 @@ public class Spawner : MonoBehaviour
     public GameObject spawnPrefabPoo;
     public GameObject spawnPrefabApple;
     public GameObject player;
+    public Timer timer;
     
     private float currrentPooSpawnTime = 0;
     private float currrentAppSpawnTime = 0;
@@ -39,9 +40,11 @@ public class Spawner : MonoBehaviour
         if (player != null) {
             transform.position = player.transform.position;
         }
-        currrentPooSpawnTime += Time.deltaTime;
-        currrentAppSpawnTime += Time.deltaTime;
-
+        if (timer.GetTimerActive())
+        {
+            currrentPooSpawnTime += Time.deltaTime;
+            currrentAppSpawnTime += Time.deltaTime;
+        }
         if (currrentPooSpawnTime > pooSpawnTime)
         {
             SpawnbyType(spawnPrefabPoo);

@@ -22,7 +22,7 @@ public class DeathScreen : MonoBehaviour
     {
         timer.TimerActive(false);
 
-        Time.timeScale = 3;
+        Time.timeScale = 10;
         deathCounter++;
     }
 

@@ -59,6 +59,11 @@ public class Timer : MonoBehaviour
         timerOn = tf;
     }
 
+    public bool GetTimerActive()
+    {
+        return timerOn;
+    }
+
     string LeadingZero(int n)
     {
         return n.ToString().PadLeft(2, '0');

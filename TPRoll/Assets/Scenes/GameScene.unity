@@ -284,7 +284,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.764151, g: 0.21266466, b: 0.21266466, a: 0.25490198}
+  m_Color: {r: 0.4811321, g: 0.21106265, b: 0.21106265, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2763,7 +2763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.392}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.15686275}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2795,7 +2795,11 @@ MonoBehaviour:
   adScreen: {fileID: 1995673100}
   poopReport: {fileID: 699792523}
   spn: {fileID: 0}
+  BackGround: {fileID: 116109469}
   MinGameBeforeAd: 2
+  timeLeft: 10
+  targetColor: {r: 0, g: 0, b: 0, a: 0}
+  targetAlpha: {r: 0, g: 0, b: 0, a: 0}
   timer: {fileID: 1339122063}
 --- !u!222 &1674113080
 CanvasRenderer:

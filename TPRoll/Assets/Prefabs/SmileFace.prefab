@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5990852050464799671}
   - component: {fileID: 5990852050464799656}
-  - component: {fileID: 5990852050464799669}
+  - component: {fileID: 7622626221241988760}
   - component: {fileID: 5990852050464799668}
   - component: {fileID: 5990852050464799670}
   m_Layer: 0
@@ -87,7 +87,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5990852050464799669
+--- !u!114 &7622626221241988760
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -100,8 +100,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementJoystick: {fileID: 0}
-  playerSpeed: 7
+  playerSpeed: 0
   logBase: 2
+  spn: {fileID: 0}
+  ememyPref: {fileID: 0}
 --- !u!58 &5990852050464799668
 CircleCollider2D:
   m_ObjectHideFlags: 0

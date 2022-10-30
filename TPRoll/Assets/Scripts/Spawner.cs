@@ -16,7 +16,7 @@ public class Spawner : MonoBehaviour
     public GameObject spawnPrefabApple;
     public GameObject player;
     public Timer timer;
-    
+
     private float currrentPooSpawnTime = 0;
     private float currrentAppSpawnTime = 0;
 
@@ -49,7 +49,7 @@ public class Spawner : MonoBehaviour
         {
             SpawnbyType(spawnPrefabPoo);
 
-            PlayerPrefs.SetInt("CurrentPoo", PooNum++);
+            
             currrentPooSpawnTime = 0;
         }
         if (currrentAppSpawnTime > AppleSpawnTime)
@@ -63,7 +63,10 @@ public class Spawner : MonoBehaviour
     }
 
     public void SpawnbyType(GameObject prefab) {
-
+        if (prefab == spawnPrefabPoo) {
+            PooNum++;
+            PlayerPrefs.SetInt("CurrentPoo", PooNum);
+        }
         Instantiate(prefab, 
                     RandomCircle(transform.position, CircleRadius), 
                     Quaternion.identity);

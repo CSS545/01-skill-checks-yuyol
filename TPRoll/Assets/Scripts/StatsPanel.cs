@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.TextCore;
 
 public class StatsPanel : MonoBehaviour
 {
     public Text LifeText;
     public Text PooText;
     public Text AppleText;
+    private int countTmp;
 
     // Start is called before the first frame update
     private void Awake()
@@ -17,12 +17,10 @@ public class StatsPanel : MonoBehaviour
     }
     private void Start()
     {
-        int countTmp = PlayerPrefs.GetInt("TotalDeath", 0);
-        if (LifeText != null)
-        {
-            Debug.Log("TotalDeath" + countTmp);
-            LifeText.text = countTmp.ToString();
-        }
+        countTmp = PlayerPrefs.GetInt("TotalDeath", 0);
+        
+        Debug.Log("StatTotalDeath" + countTmp);
+        LifeText.text = countTmp.ToString();
         countTmp = PlayerPrefs.GetInt("highScore", 0);
         PooText.text = countTmp.ToString();
         countTmp = PlayerPrefs.GetInt("AppleEat", 0);

@@ -13,11 +13,10 @@ public class OptionSceneManager : MonoBehaviour
     void Start()
     {
         
-
         //open count
         int countTmp = PlayerPrefs.GetInt("openCount",0);
         PlayerPrefs.SetInt("openCount",++countTmp);
-        Debug.Log(countTmp);
+        Debug.Log("OpenOptionCount" + countTmp);
     }
 
     // Update is called once per frame

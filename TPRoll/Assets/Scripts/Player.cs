@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     public Spawner spn;
     public GameObject ememyPref;
     private Rigidbody2D rb;
+    private int countTmp;
 
     // Start is called before the first frame update
     void Start()
@@ -45,6 +46,9 @@ public class Player : MonoBehaviour
             GameScreen gameScreen = FindObjectOfType<GameScreen>();
             if (gameScreen != null)
             {
+                //update food collected this round
+                PlayerPrefs.GetInt("AppleEat", 0);
+                PlayerPrefs.SetInt("AppleEat", countTmp);
                 gameScreen.OnPlayerDeath();
             }
             
@@ -53,12 +57,12 @@ public class Player : MonoBehaviour
         //7,10 15,speed up 0.06
         if (collision.gameObject.CompareTag("Item"))
         {
-            
+            //Eat food
             Destroy(collision.gameObject);
+            //Digest
             spn.SpawnbyType(ememyPref);
-
-            int countTmp = PlayerPrefs.GetInt("AppleEat", 0);
-            PlayerPrefs.SetInt("AppleEat", countTmp++); 
+            //Record Food Count
+            countTmp++; 
 
             foodLimiter++;
             playerSpeed = playerSpeed + Mathf.Log(playerSpeed, logBase) / foodLimiter;

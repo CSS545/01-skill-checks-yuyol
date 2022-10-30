@@ -11,6 +11,7 @@ public class DeathScreen : MonoBehaviour
     public Text poopReport;
     public Spawner spn;
     public GameObject BackGround;
+    public GameObject DeathFace;
 
     private int CurPoo;
     //control the contineous gameplays per fullscreen ad break
@@ -31,6 +32,7 @@ public class DeathScreen : MonoBehaviour
     private void OnEnable()
     {
         timer.TimerActive(false);
+        DeathFace.SetActive(true);
         CurPoo = PlayerPrefs.GetInt("CurrentPoo", 1);
         poopReport.text = CurPoo.ToString();
         PlayerPrefs.SetInt("CurrentPoo", 1);
@@ -73,6 +75,7 @@ public class DeathScreen : MonoBehaviour
     {
         timer.TimerActive(true);
 
+        DeathFace.SetActive(false);
         Time.timeScale = 1;
     }
 

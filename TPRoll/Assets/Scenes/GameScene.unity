@@ -1686,9 +1686,17 @@ PrefabInstance:
       value: SmileFace
       objectReference: {fileID: 0}
     - target: {fileID: 5990852050464799669, guid: 3f545c32faf051d408290c379654be24, type: 3}
+      propertyPath: spn
+      value: 
+      objectReference: {fileID: 356236916}
+    - target: {fileID: 5990852050464799669, guid: 3f545c32faf051d408290c379654be24, type: 3}
       propertyPath: logBase
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5990852050464799669, guid: 3f545c32faf051d408290c379654be24, type: 3}
+      propertyPath: ememyPref
+      value: 
+      objectReference: {fileID: 1474050988}
     - target: {fileID: 5990852050464799669, guid: 3f545c32faf051d408290c379654be24, type: 3}
       propertyPath: movementJoystick
       value: 
@@ -2284,6 +2292,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1339122061}
   m_CullTransparentMesh: 1
+--- !u!1 &1474050988 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2682231024778460290, guid: 3f95e89948fd2aa4182ca6ae3caad229, type: 3}
+  m_PrefabInstance: {fileID: 1773170888}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1513553759
 GameObject:
   m_ObjectHideFlags: 0

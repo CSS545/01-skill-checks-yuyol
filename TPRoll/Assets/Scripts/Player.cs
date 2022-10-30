@@ -8,6 +8,8 @@ public class Player : MonoBehaviour
     public MovementJoystick movementJoystick;
     public float playerSpeed;
     public float logBase = 2;
+    public Spawner spn;
+    public GameObject ememyPref;
     private Rigidbody2D rb;
 
     // Start is called before the first frame update
@@ -51,6 +53,7 @@ public class Player : MonoBehaviour
         {
             
             Destroy(collision.gameObject);
+            spn.SpawnbyType(ememyPref);
 
             int countTmp = PlayerPrefs.GetInt("AppleEat", 0);
             PlayerPrefs.SetInt("AppleEat", countTmp++); 

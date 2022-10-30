@@ -10,6 +10,9 @@ public class DeathScreen : MonoBehaviour
     //control the contineous gameplays per fullscreen ad break
     public int MinGameBeforeAd = 2;
     //awake called before starts
+
+    public Timer timer;
+
     private void Awake()
     {
         gameObject.SetActive(false);
@@ -17,12 +20,16 @@ public class DeathScreen : MonoBehaviour
     // Called when ever enable as active
     private void OnEnable()
     {
-        Time.timeScale = 0;
+        timer.TimerActive(false);
+
+        Time.timeScale = 3;
         deathCounter++;
     }
 
     private void OnDisable()
     {
+        timer.TimerActive(true);
+
         Time.timeScale = 1;
     }
 

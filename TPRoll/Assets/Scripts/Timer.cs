@@ -11,6 +11,7 @@ public class Timer : MonoBehaviour
     private int hr;
     string minute;
     string hour;
+    private bool timerOn;
     // Start is called before the first frame update
     void Awake()
     {
@@ -21,14 +22,17 @@ public class Timer : MonoBehaviour
         currrentTime = 0;
         min = 0;
         minute = "00";
-        Time.timeScale = 60;
-    }
+        timerOn = true;
+    //Time.timeScale = 60;
+}
 
     // Update is called once per frame
     void Update()
     {
-        
-        currrentTime += Time.deltaTime;
+        if (timerOn)
+        {
+            currrentTime += Time.deltaTime;
+        }
 
         string second = LeadingZero((int)currrentTime);
         if (currrentTime > 59) {
@@ -49,6 +53,10 @@ public class Timer : MonoBehaviour
         else {
             textTimer.text = hour + ":" + minute + ":" + second;
         }
+    }
+    public void TimerActive(bool tf)
+    {
+        timerOn = tf;
     }
 
     string LeadingZero(int n)

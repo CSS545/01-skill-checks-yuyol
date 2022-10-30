@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PauseScreen : MonoBehaviour
 {
+    public Timer timer;
     //awake called before starts
     private void Awake()
     {
@@ -32,5 +33,6 @@ public class PauseScreen : MonoBehaviour
     private void OnDisable()
     {
         Time.timeScale = 1;
+        timer.TimerActive(true);
     }
 }

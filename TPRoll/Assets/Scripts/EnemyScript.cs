@@ -9,7 +9,6 @@ public class EnemyScript : MonoBehaviour
     private Rigidbody2D rb;
 
     public Vector2 enemyVec;
-    private Vector2 enemyDestination;
     private Vector2 enemyOrigPos;
 
 
@@ -31,8 +30,8 @@ public class EnemyScript : MonoBehaviour
         
         enemyOrigPos = rb.transform.position;
 
-        Vector2 aim = player.position;
-        enemyVec = (aim - enemyOrigPos).normalized;
+        //Vector2 aim = player.position;
+        enemyVec = ((Vector2)player.position - enemyOrigPos).normalized;
 
 
         rb.velocity = new Vector2 (enemyVec.x * enemySpeed,

@@ -15,6 +15,7 @@ public class Spawner : MonoBehaviour
     public GameObject spawnPrefabPoo;
     public GameObject spawnPrefabApple;
     public GameObject player;
+    public Timer timer;
     
     private float currrentPooSpawnTime = 0;
     private float currrentAppSpawnTime = 0;
@@ -39,27 +40,37 @@ public class Spawner : MonoBehaviour
         if (player != null) {
             transform.position = player.transform.position;
         }
-        currrentPooSpawnTime += Time.deltaTime;
-        currrentAppSpawnTime += Time.deltaTime;
-
+        if (timer.GetTimerActive())
+        {
+            currrentPooSpawnTime += Time.deltaTime;
+            currrentAppSpawnTime += Time.deltaTime;
+        }
         if (currrentPooSpawnTime > pooSpawnTime)
         {
-            Instantiate(spawnPrefabPoo, 
-                        RandomCircle(transform.position, CircleRadius), 
-                        Quaternion.identity);
+            SpawnbyType(spawnPrefabPoo);
+
             PlayerPrefs.SetInt("CurrentPoo", PooNum++);
             currrentPooSpawnTime = 0;
         }
         if (currrentAppSpawnTime > AppleSpawnTime)
         {
-            Instantiate(spawnPrefabApple,
-                        RandomCircle(transform.position, CircleRadius),
-                        Quaternion.identity);
+            SpawnbyType(spawnPrefabApple);
+            
             currrentAppSpawnTime = 0;
         }
         
 
     }
+
+    public void SpawnbyType(GameObject prefab) {
+
+        Instantiate(prefab, 
+                    RandomCircle(transform.position, CircleRadius), 
+                    Quaternion.identity);
+
+    }
+
+
 
     //https://answers.unity.com/questions/714835/best-way-to-spawn-prefabs-in-a-circle.html
 

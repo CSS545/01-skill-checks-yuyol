@@ -1559,6 +1559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b99826143dca8a449c1067847635e44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  btn: {fileID: 0}
 --- !u!1 &1689771273
 GameObject:
   m_ObjectHideFlags: 0
@@ -1723,9 +1724,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 868194482}
-        m_TargetAssemblyTypeName: MenuScreen, Assembly-CSharp
-        m_MethodName: PlayGame
+      - m_Target: {fileID: 1654670676}
+        m_TargetAssemblyTypeName: feedbackScene, Assembly-CSharp
+        m_MethodName: toFeedBackScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

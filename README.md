@@ -30,6 +30,8 @@ DONE [P1] Avatar display [Austin]
 
 [P2] Landscape Orientation
 
+[P1] Nightclub Option
+
 
 
 

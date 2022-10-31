@@ -26,7 +26,10 @@ public class DeathScreen : MonoBehaviour
     {
         CurPoo = 0;
         gameObject.SetActive(false);
-        NIGHTCLUB = false;
+
+        NIGHTCLUB = (PlayerPrefs.GetInt("NightClub") != 0);
+        Debug.Log("NightClub " + PlayerPrefs.GetInt("NightClub"));
+        //PlayerPrefs.SetInt("NightClub", (NIGHTCLUB ? 1 : 0));
     }
     // Called when ever enable as active
     private void OnEnable()

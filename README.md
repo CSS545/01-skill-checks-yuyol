@@ -1,6 +1,40 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=8924295&assignment_repo_type=AssignmentRepo)
 Hint: [Markup Guide](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
+# Task Checkout List
+File created to keep track of MVP tasks, README at Bottom
+## Add your name after your desired task;
+### Add DONE infront of your finished task;
+#### Add any features you can think of in the list, give it a priority tag infront
+DONE [P1] Avatar display [Austin]
+
+[P1] Food varities [Austin] -with speed up and ememy generation
+
+[P2] Ememy movement scaling
+
+[P0] Social Media Page API
+
+[P0] Option resize problem
+
+[P1] Starting Story Scene w/ or w/o tutorial
+
+[P0] Tomestone design - State Managment
+
+[P0] Full screen Ad - every 3 gameplays
+
+[P2] Localization
+
+[P1] No audio playing when in background
+
+[P0] Premissions
+
+[P2] Landscape Orientation
+
+[P1] Nightclub Option
+
+
+
+
 
 # TP Roll
 ## Tagline: escape your 💩 

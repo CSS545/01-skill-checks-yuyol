@@ -6,8 +6,6 @@ File created to keep track of MVP tasks, README at Bottom
 ## Add your name after your desired task;
 ### Add DONE infront of your finished task;
 #### Add any features you can think of in the list, give it a priority tag infront
-examples:
-
 DONE [P1] Avatar display [Austin]
 
 [P1] Food varities [Austin] -with speed up and ememy generation
@@ -18,9 +16,20 @@ DONE [P1] Avatar display [Austin]
 
 [P0] Option resize problem
 
-[P1] Starting Story Scene
+[P1] Starting Story Scene w/ or w/o tutorial
 
 [P0] Tomestone design
+
+[P2] Localization
+
+[P1] No audio playing when in background
+
+[P1] Premissions
+
+[P2] Landscape Orientation
+
+
+
 
 
 # TP Roll

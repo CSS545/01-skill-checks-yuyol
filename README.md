@@ -2,12 +2,25 @@
 Hint: [Markup Guide](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
 # Task Checkout List
-file created to keep track of MVP tasks
+File created to keep track of MVP tasks, README at Bottom
 ## Add your name after your desired task;
 ### Add DONE infront of your finished task;
 #### Add any features you can think of in the list, give it a priority tag infront
 examples:
-DONE[P1]Avatar display[Austin]
+
+DONE [P1] Avatar display [Austin]
+
+[P1] Food varities [Austin] -with speed up and ememy generation
+
+[P2] Ememy movement
+
+[P0] Social Media Page
+
+[P0] Option resize problem
+
+[P1] Starting Story Scene
+
+[P0] Tomestone design
 
 
 # TP Roll

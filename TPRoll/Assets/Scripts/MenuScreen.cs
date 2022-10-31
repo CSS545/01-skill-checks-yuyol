@@ -6,6 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class MenuScreen : MonoBehaviour
 {
+    private void OnEnable()
+    {
+        if (PlayerPrefs.GetInt("NightClub", 0) != 0)
+        {
+            PlayerPrefs.SetInt("NightClub", 0);
+        }
+    }
     public void PlayGame(){
         SceneManager.LoadScene("GameScene");
     }
@@ -21,5 +28,8 @@ public class MenuScreen : MonoBehaviour
     {
         SceneManager.LoadScene("googleScene");
     }
-
+    public void SetNightClub(bool isNClub)
+    {
+        PlayerPrefs.SetInt("NightClub", (isNClub ? 1 : 0));
+    }
 }

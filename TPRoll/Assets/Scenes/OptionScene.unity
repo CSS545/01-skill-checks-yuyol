@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 100818079}
   - component: {fileID: 100818078}
   m_Layer: 5
-  m_Name: SettingBtn (3)
+  m_Name: ResetBtn (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -636,7 +636,7 @@ GameObject:
   - component: {fileID: 161949423}
   - component: {fileID: 161949422}
   m_Layer: 5
-  m_Name: SettingBtn (1)
+  m_Name: HomeBtn (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -926,7 +926,7 @@ GameObject:
   - component: {fileID: 499849408}
   - component: {fileID: 499849407}
   m_Layer: 5
-  m_Name: SettingBtn (6)
+  m_Name: StatsBtn (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1664,7 +1664,7 @@ GameObject:
   - component: {fileID: 740370017}
   - component: {fileID: 740370020}
   m_Layer: 5
-  m_Name: SettingBtn (2)
+  m_Name: RateBtn (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2890,7 +2890,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   statsPanel: {fileID: 1653682879}
   erasePanel: {fileID: 120385423}
-  NCToggle: {fileID: 1768977169}
 --- !u!1 &1201959327
 GameObject:
   m_ObjectHideFlags: 0
@@ -4133,7 +4132,7 @@ GameObject:
   - component: {fileID: 1757858267}
   - component: {fileID: 1757858266}
   m_Layer: 5
-  m_Name: SettingBtn (5)
+  m_Name: CameraBtn (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4270,7 +4269,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1768977168
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4290,7 +4289,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10, y: 46.6}
+  m_AnchoredPosition: {x: 0, y: 46.6}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1768977169
@@ -5043,7 +5042,7 @@ GameObject:
   - component: {fileID: 1935826539}
   - component: {fileID: 1935826538}
   m_Layer: 5
-  m_Name: SettingBtn (4)
+  m_Name: SocialBtn (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

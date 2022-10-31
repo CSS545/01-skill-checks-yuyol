@@ -8,7 +8,7 @@ public class OptionSceneManager : MonoBehaviour
 {
     public StatsPanel statsPanel;
     public ErasePanel erasePanel;
-    public Toggle NCToggle;
+    //public Toggle NCToggle;
     // Start is called before the first frame update
     // public Text text;
     void Start()
@@ -19,9 +19,9 @@ public class OptionSceneManager : MonoBehaviour
         PlayerPrefs.SetInt("openCount",++countTmp);
         Debug.Log("OpenOptionCount" + countTmp);
 
-        NCToggle = GetComponent<Toggle>();
+        //NCToggle = GetComponent<Toggle>();
 
-        Debug.Log(NCToggle);
+        //Debug.Log(NCToggle);
         //if (NCToggle.isOn != (PlayerPrefs.GetInt("NightClub") != 0))
         //{
         //    NCToggle.SetIsOnWithoutNotify((PlayerPrefs.GetInt("NightClub") != 0));
@@ -51,9 +51,9 @@ public class OptionSceneManager : MonoBehaviour
     }
 
 
-    public void SetnightClub(bool isNClub)
-    {
-        PlayerPrefs.SetInt("NightClub", (isNClub ? 1 : 0));
-    }
+    //public void SetnightClub(bool isNClub)
+    //{
+    //    PlayerPrefs.SetInt("NightClub", (isNClub ? 1 : 0));
+    //}
 
 }

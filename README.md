@@ -10,21 +10,23 @@ DONE [P1] Avatar display [Austin]
 
 [P1] Food varities [Austin] -with speed up and ememy generation
 
-[P2] Ememy movement
+[P2] Ememy movement scaling
 
-[P0] Social Media Page
+[P0] Social Media Page API
 
 [P0] Option resize problem
 
 [P1] Starting Story Scene w/ or w/o tutorial
 
-[P0] Tomestone design
+[P0] Tomestone design - State Managment
+
+[P0] Full screen Ad - every 3 gameplays
 
 [P2] Localization
 
 [P1] No audio playing when in background
 
-[P1] Premissions
+[P0] Premissions
 
 [P2] Landscape Orientation
 

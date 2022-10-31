@@ -69,7 +69,7 @@ public class Player : MonoBehaviour
 
             foodLimiter++;
             playerSpeed = playerSpeed + Mathf.Log(playerSpeed, logBase) / foodLimiter;
-            Debug.Log(Mathf.Log(playerSpeed, logBase) + "/"+ foodLimiter + " = " + Mathf.Log(playerSpeed, logBase) / foodLimiter);
+            Debug.Log(Mathf.Log(playerSpeed, logBase) + "/"+ foodLimiter + " = " + playerSpeed);
 
         }
 

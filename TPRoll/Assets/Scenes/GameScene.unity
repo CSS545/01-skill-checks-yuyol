@@ -697,6 +697,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefabPoo: {fileID: 1067838142}
   spawnPrefabApple: {fileID: 7964618532795343532, guid: 68da232b798d0c14482fb0ecc253c37e, type: 3}
+  coffeePrefab: {fileID: 746347634}
+  icecreamPrefab: {fileID: 2092764807}
   player: {fileID: 701589555}
   timer: {fileID: 1339122063}
   pooSpawnTime: 3
@@ -1618,7 +1620,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 746347634}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -86.4698, y: -4.3558, z: 0}
+  m_LocalPosition: {x: -88.6, y: -5.91, z: 0}
   m_LocalScale: {x: 0.17554164, y: 0.17554164, z: 0.17554164}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3998,7 +4000,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2092764807}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -89.3734, y: -4.7666, z: 0}
+  m_LocalPosition: {x: -84.33, y: -3.21, z: 0}
   m_LocalScale: {x: 1.2245585, y: 1.2245585, z: 1.2245585}
   m_ConstrainProportionsScale: 0
   m_Children: []

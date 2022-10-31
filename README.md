@@ -1,6 +1,27 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=8924295&assignment_repo_type=AssignmentRepo)
 Hint: [Markup Guide](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
+# Task Checkout List
+File created to keep track of MVP tasks, README at Bottom
+## Add your name after your desired task;
+### Add DONE infront of your finished task;
+#### Add any features you can think of in the list, give it a priority tag infront
+examples:
+
+DONE [P1] Avatar display [Austin]
+
+[P1] Food varities [Austin] -with speed up and ememy generation
+
+[P2] Ememy movement
+
+[P0] Social Media Page
+
+[P0] Option resize problem
+
+[P1] Starting Story Scene
+
+[P0] Tomestone design
+
 
 # TP Roll
 ## Tagline: escape your 💩 

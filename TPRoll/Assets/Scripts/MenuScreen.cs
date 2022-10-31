@@ -17,6 +17,9 @@ public class MenuScreen : MonoBehaviour
     public void QuitGame(){
         
     }
-
+    public void DisplayGoogleStore()
+    {
+        SceneManager.LoadScene("googleScene");
+    }
 
 }

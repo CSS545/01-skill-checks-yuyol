@@ -30,8 +30,9 @@ public class EnemyScript : MonoBehaviour
     {
         float vol = Random.Range(0.1f, 0.3f);
         if (collision.gameObject.CompareTag("Player")) {
-            if (currrentTime >  4 + Random.Range(0, 4f)) {
+            if (currrentTime >  5 + Random.Range(0, 5f)) {
                 deathSFSource.PlayOneShot(deathClip, vol);
+                currrentTime = 0;
             }
         }
     }

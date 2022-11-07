@@ -21,6 +21,7 @@ public class DeathScreen : MonoBehaviour
     public Color targetColor;
     public bool NIGHTCLUB;
     public Timer timer;
+    private int Scoretemp;
 
     private void Awake()
     {
@@ -36,11 +37,24 @@ public class DeathScreen : MonoBehaviour
     {
         timer.TimerActive(false);
         DeathFace.SetActive(true);
+        targetColor = new Color(0, 0, 0);
+        Time.timeScale = 7;
+
+        //get poo count, min = 1; update poo text and 
         CurPoo = PlayerPrefs.GetInt("CurrentPoo", 1);
         poopReport.text = CurPoo.ToString();
+        //reset curr Poo count
         PlayerPrefs.SetInt("CurrentPoo", 1);
-        Time.timeScale = 7;
-        targetColor = new Color(0, 0, 0);
+
+        //update highscore and total poo
+        Scoretemp = PlayerPrefs.GetInt("highScore", 0);
+        if (CurPoo > Scoretemp)
+        {
+            PlayerPrefs.SetInt("highScore", CurPoo);
+        }
+        Scoretemp = PlayerPrefs.GetInt("TotalPoo", 0);
+        Scoretemp += CurPoo;
+        PlayerPrefs.SetInt("TotalPoo", Scoretemp);
 
         deathCounter++;
     }
@@ -68,7 +82,9 @@ public class DeathScreen : MonoBehaviour
         {
             // transition in progress
             // calculate interpolated color
-            BackGround.GetComponent<Renderer>().material.color = Color.Lerp(BackGround.GetComponent<Renderer>().material.color, targetColor, Time.deltaTime / timeLeft);
+            BackGround.GetComponent<Renderer>().material.color = 
+                Color.Lerp(BackGround.GetComponent<Renderer>().material.color,
+                targetColor, Time.deltaTime / timeLeft);
 
             // update the timer
             timeLeft -= Time.deltaTime;
@@ -77,7 +93,6 @@ public class DeathScreen : MonoBehaviour
     private void OnDisable()
     {
         timer.TimerActive(true);
-
         DeathFace.SetActive(false);
         Time.timeScale = 1;
     }
@@ -99,11 +114,6 @@ public class DeathScreen : MonoBehaviour
     private void checkAd() {
         
         
-
-        int HighScore = PlayerPrefs.GetInt("highScore", 0);
-        if (CurPoo > HighScore) {
-            PlayerPrefs.SetInt("highScore", CurPoo);
-        }
         if (deathCounter > MinGameBeforeAd)
         {
             adScreen.gameObject.SetActive(true);
